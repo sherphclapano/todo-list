@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phase 1</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body class="bg-img">
+    <div class="box-container">
+        <h1 class="title">Daily Tasks 📝</h1>
+        <p>Enter a task and press the "+" button to see it displayed below.</p>
+
+        <div class="input-section">
+            <input placeholder="Enter your task here" id="taskInput" type="text" />
+            <button class="add-btn" type="button" onclick="addTask()">+</button>
+        </div>
+
+        <div class="tasks">
+            <span>My Tasks</span>
+            <div class="icons">
+                <button type="edit" class="edit-btn">✏️</button>
+                <button type="delete" class="delete-btn">🗑️</button>
+            </div>
+        </div>
+
+        <div class="task-list-container">
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("image/circuit-wallpaper-4k.jpg");
+    background-position: center;
+    background-size: 1280px 720px;
+
+    opacity: 0.90;
+    z-index: -1;
+}
+
+.box-container {
+    background: white;
+    width: 60%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 25px;
+}
+
+.input-section {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 40px;
+    margin-bottom: 25px;
+}
+
+.input-section input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+}
+
+.input-section input:focus {
+    outline: none;
+}
+
+.add-btn {
+    background: #2dcc35;
+    border: none;
+    color: black;
+    font-size: 28px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+.delete-btn {
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+.tasks {
+    background: #f0f0f0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list-container {
+    height: 280px;
+    padding: 10px;
+    margin-top: 5px;
+
+    overflow: hidden;
+    background: #f0f0f0;
+    position: relative;
+}
+
+/* Scrolling list inside */
+#taskList {
+    max-height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin: 0;
+    list-style: none;
+}
+/* Container around the listed items */
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    background: lightslategray;
+    box-shadow: 0 0 5px lightslategray;
+    margin-bottom: 12px;
+}
+
+/* Completed state */
+.task-item.completed span {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+/* Checkbox style */
+.task-check {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    accent-color: #2dcc35;
+}
+
+.icons {
+    margin-left: 10px;
+    cursor: pointer;
+}
