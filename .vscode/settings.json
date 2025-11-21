@@ -1,9 +1,0 @@
-{
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.preferredHighContrastColorTheme": "Visual Studio Dark",
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorWidth": 0,
-    "editor.fontFamily": "Jetbrains Mono",
-    "editor.defaultFormatter": null,
-    "editor.fontSize": 13
-}
